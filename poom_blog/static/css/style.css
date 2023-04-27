@@ -1,0 +1,169 @@
+/* Initialize Styling for tags */
+h1,
+h2{
+  font-weight: 700;
+  font-family: 'Poppins', sans-serif;
+}
+
+h3,
+h4{
+  font-weight: 500;
+  font-family: 'Poppins', sans-serif;
+}
+
+h5,
+h6 {
+  font-weight: 300;
+  font-family: 'Poppins', sans-serif;
+}
+
+p{
+  font-weight: 300;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Styling for Classes */
+
+.bg-image {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+
+.bg-image-home{
+  background-image: url("https://lh3.googleusercontent.com/XbbDTBYkkauE4Nht3dNNYOkdlEu07p71s5rQQ9TKgOhga0Ut8qePNpAny4BpCy3culgDOLjX1HZjrmNYPGyuMkOzSxT5AAN4lo0jqJY4M9Z1WYystjZ-2rK5oj87eu3PyRGAUSMzEEs3igJ8qNc83VOb5yogYyi5RsuxtmXbqfpOR1CDzau3IlK-WoNyxxX-H_xDNJm1JHzjjQxp3JBH4HQl-IXutWhMQZkzPECPUNo2NPNvt-0zBY6-mW4Dy3hIq7axhlo0PavNq_wCKf4MkYcLNJSYIU432kGHX97MwkvT2Vhf3ei07CU2nOEr8hao7umtQiPOSZr3qYcBoyGwdrWqXzi2RYnVuMF29harOoN-04JktWQHGEEiMD9cApNHUlIZx-2XtugP6UW0XxKALBgjiR9LHSEBT_yWWJz60_WDX_3WUmx45KhSnvAdXdyrrygmi4GGkuG61AFusAb7hZzxRBA3DLzOULsmxBy3ZsEn-blgQLUodGnsVeFStlBlwLqFpEpmTAXVWs4vnAxLRBjEHcR388z4bBHH43SAucmbfwiSc_SBfthv6QX9qBvsI5PPW4H2kfcpUINnjytln597mlL_cAfHZ6ZfSR8vNPY-IFstIA8A7YD8Nn6aXmYO8ANW9QzFF_blW_RNO_vcOOWw17J5uDMyZ7n6-lAWlOOc6fm-KlWPEvoeB_lgnRl3qXlmofiJHJNiUy5IQiBLYfQOol_cL7BmZUHH9E1THRCUCtiQpIiKIouGsIp-31GEq2D14I3E_gIeHKyg_Tr4RaeDSYhlD9B3VfABEMYFDNkrGiD7PITo7ddZ11Zgngs3mhJ9jzvNNLLHZoL47UAme3mPlUD-P0m09lWhrcvIzBIHYkTRF4oJKDP_Izn9rrr7ug-hIefw1gtCJbn-lp2J4mhmO8lQR-ewTY7KgfSIspRqOLVJJOHq406moRamNeKwtRL022NGspSXNWFA2bR0FQ=w1366-h768-s-no?authuser=0");
+}
+
+.bg-image-skills{
+  background-image: url("https://lh3.googleusercontent.com/ZLYWYZUTLwTsmRg70qkzsnpVL7o4RHs4ouk-385GW3cHGgEagzzKM21OxPkkd6jOxmCzBgdIARszRxzR0X-Mo-2wEcu5Rnr6VZnbuP4-R3-jBmnhkirTsECgcWgZOQFoBRw3Fr5Hi9xkazO6SlJIVy22hyLqu5tQPo9ouQ5oIaCxxzJNLHF9VdB26B2NGZU_QBMvijFkFjcdRyu2D_GXiMSCsQ0XFhqEzizMta-y3jIpqt45blRP741U8b8UGUAicqpzVvgliuRlY4Hlj_eGxefotwjddK_RQ88XHGg3obxEQ17PzeaUM9tfN2IIX-NXh_SbjydqIfkA4--fNpT0sFXRuWKXvQbQuDlP6UPpBlQ2jtZWmevYeprGqzSsHxm37U3phpavZrYRj3800ieyz_obZbXzXPxPuMGiJaSrNI-3olMcT1c4BOxkUV8kiAPuTP5OYwlsgfW3vBc-uEyWBjm1Fg0w4PO7cdZ3F_AJVvUiWbHeBOIO18VSgq4a5HdHM4hbM4uzJFbGA27Yx6Ve3Wigfblz9wUswUdUyTEExmlUaoFqRXujh_FR_xkSc0pyojxOt6naLUUPxmXs4N_pfQyU_cknFBVAoTMc4XMhlX0-bEYmK7SNnTqEPB3JHUjndlGPWewQSnACaeo2X6j6-GMHJaeUSDfVgHquU7I76T6QNvn0qJgpo1jeaAZtwgaC4iBdFjLH-BvzZjBCQzpNP_Xczm0Y7yqgU5PnmOTSj2oMRtkqFHD0pU2sZL3pUjBiXrhbZShsFBkcAkvztDBYddXxa0ILJDXPule8U6qW1LA7emITZ8Is5kTpQuomGLqPh5GT3qy76o6jvtqT-imRTXPPduyM9udspqmLj9DPJKm3MheRnnPMNNACiEEDH72PJrwmh1CJqMDMeCIo4apWfEt2uCq_D0oXQwRJRURdTccGASiJ-mxHiQmZXSkEcloqM3Hh0onpwBXIjVf3-FqMEA=w1366-h768-s-no?authuser=0");
+}
+
+
+.name_job{
+  padding: 80px 15px 0 10px;
+}
+
+.name{
+  font-size: 54px;
+}
+
+.name-white{
+  color: #ffffff;
+}
+
+.job-white{
+  color: #ffffff;
+}
+
+.job{
+  font-size: 40px;
+}
+
+.description{
+  padding: 5% 9%;
+}
+
+.description-text{
+  font-size: 18px;
+}
+
+.btn-home{
+  margin-top: 10%;
+  margin-left: 5%;
+}
+
+/* Skills Part */
+
+/* .skill-container {
+  position: relative;
+  margin-top: 5%;
+  margin-bottom: 5%;
+} */
+
+.skill-title{
+  font-size: 60px;
+  color: #FF6D60;
+}
+.skill-logo{
+  display: block;
+  max-width:230px;
+  max-height:200px;
+  width: auto;
+  height: auto;
+}
+
+.vertical-center {
+  margin: 0;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+
+/* .carousel-item img{
+  display: inline;
+} */
+
+/* Projects Part */
+
+.project-heading{
+  padding-top: 70px;
+}
+
+.project-heading-text{
+  font-size: 60px;
+  color: #263A29;
+}
+
+.project-container{
+  padding: 3% 0;
+}
+
+.card-title{
+  font-size: 18px;
+}
+
+.card-text{
+  font-size: 16px;
+}
+
+/* Footer */
+.footer-container{
+  margin-top: 5%;
+}
+
+.contact-description{
+  padding-top: 3%;
+  color: #ffffff;
+}
+
+.contact-email{
+  color: #afd9d5
+}
+
+.contact-email:hover{
+  color: black;
+}
+
+.fa-stack{
+  margin: 0 20px;
+}
+
+.fa-brands{
+  color: #ffffff;
+  font-size: 36px;
+}
+
+.fa-brands:hover{
+  color: #212A3E;
+}
+
+.icon-container{
+  padding-top: 20px;
+}
+
+.copyright{
+  font-size: 10px;
+  padding-top: 12%;
+}

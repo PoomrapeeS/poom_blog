@@ -103,6 +103,9 @@ class Comment(db.Model):
 with app.app_context():
     db.create_all()
 
+@app.route('/')
+def home():
+    return render_template('index.html')
 
 @app.route('/portfolio')
 def get_all_posts():

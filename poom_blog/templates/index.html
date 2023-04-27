@@ -1,0 +1,283 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- CSS Stylesheet -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+  </head>
+    <link href="{{ url_for('static', filename='css/style.css')}}" rel="stylesheet" />
+
+    <!-- Custom fonts for this template -->
+    <script src="https://kit.fontawesome.com/6f7e51e900.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+
+    <title>Poom's Portfolio Website</title>
+  </head>
+  <body>
+
+    <!-- Navigation-->
+    <nav class="navbar navbar-expand-lg navbar-light" id="mainNav">
+        <div class="container px-4 px-lg-5">
+            <a class="navbar-brand" href="index.html">Start Bootstrap</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                Menu
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ms-auto py-4 py-lg-0">
+                    <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="{{ url_for('home') }}">Home</a></li>
+                    <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="{{ url_for('portfolio') }}">Portfolio</a></li>
+                    <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="{{ url_for('about') }}">About</a></li>
+                    <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="{{ url_for('contact') }}">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- Title -->
+
+    <div class="container col-xxl-8 px-4 py-5">
+      <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+        <div class="col-10 col-sm-8 col-lg-6">
+          <img src="https://i.pinimg.com/originals/54/5d/c7/545dc70147b6b8a300d33ef5cc51ca5a.jpg" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="800" height="600" loading="lazy">
+        </div>
+        <div class="col-lg-6">
+          <h1 class="display-5 fw-bold lh-1 mb-3">Hey! My name is Poom.</h1>
+          <p class="lead">A recent Chulalongkorn University graduate looking for a position as a junior Software Engineer. I am a creative person with a wealth of knowledge from my time in school and volunteer work that could contribute to the invention of anything new in this field.</p>
+          <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+            <button type="button" class="btn btn-primary btn-lg px-4 me-md-2" fdprocessedid="tllizv">Primary</button>
+            <button type="button" class="btn btn-outline-secondary btn-lg px-4" fdprocessedid="lfezwr">Default</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr>
+    
+  <section id="skills">
+
+  <!-- Background image -->
+    <div class="bg-image justify-content-center align-items-center"
+      style="height: 700px;">
+
+      <!-- py: padding in y-axis, px: padding in x-axis 5= -->
+      <div class="px-4 py-5 my-5 text-center">
+        <img class="d-block mx-auto mb-4" src="data:image/png;base64,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" alt="" width="100" height="100">
+        <h1 class="skill-title">What I Can Do?</h1>
+        <h5>framework, Langagues and Services That I've Used</h5>
+      </div>
+
+      <div id="skill-carousel" class="carousel slide" data-ride="false">
+        <div class="carousel-inner">
+
+          <div class="carousel-item active">
+            <!-- col-xxl-8 if container is in xxl size column is ruduce to 8 -->
+            <div class="container skill-container col-xxl-8">
+              <div class="row flex-row-reverse px-4">
+                <!-- xs to xxl use 4 column if we don't specify breakpoints -->
+                <div class="col-4">
+                </div>
+                <div class="col-4">
+                  <img class="d-block w-100 skill-logo vertical-center" src="./Skills Picture/flask4.png" alt="bootstrap">
+                </div>
+                <div class="col-4"> 
+                  <img class="d-block w-100 skill-logo vertical-center" src="./Skills Picture/bootstrap.png" alt="django">
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item ">
+            <div class="container skill-container col-xxl-8">
+              <div class="row flex-row px-4">
+                <div class="col-4">
+                  <img class="d-block w-100 skill-logo vertical-center" src="./Skills Picture/python.png" alt="python">
+                </div>
+                <div class="col-4">
+                  <img class="d-block w-100 skill-logo vertical-center" src="./Skills Picture/Postgre_sql2.png" alt="Postgre_sql">
+                </div>
+                <div class="col-4">
+                  <img class="d-block w-100 skill-logo vertical-center" src="./Skills Picture/html5.png" alt="html5">
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <div class="container skill-container col-xxl-8">
+              <div class="row flex-row px-4">
+                <div class="col-4">
+                  <img class="d-block w-100 skill-logo vertical-center" src="" alt="">
+                </div>
+                <div class="col-4">
+                  <img class="d-block w-100 skill-logo vertical-center" src="./Skills Picture/C++.png" alt="C++">
+                </div>
+                <div class="col-4">
+                  <img class="d-block w-100 skill-logo vertical-center" src="" alt="">
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+          <button class="carousel-control-prev" type="button" data-bs-target="#skill-carousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#skill-carousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+          </button>
+        </div>
+      </div>
+
+    </div>        <!-- Background -->
+  </section>
+  <hr>
+
+
+  <!-- My recent works -->
+  <section id="recent-projects">
+
+    <div class="text-center project-heading">
+      <h2 class="project-heading-text">My Recent Work</h2>
+      <h5>Here are a few past projects I've worked on.</h5>
+    </div>
+    
+    <div class="container project-container col-xxl-8">
+      <div class="row justify-content-center">
+        <div class="col-sm-8 col-lg-4">
+          <div class="card text-center" style="width: 18rem;">
+            <img src="https://images.unsplash.com/photo-1681819670843-28ece64f1929?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw3fHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=500&q=60" 
+            class="card-img-top" alt="..." >
+            <div class="card-body">
+              <h3 class="card-title">Special title treatment</h3>
+              <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+              <a href="https://poom-blog.herokuapp.com/post/2" class="btn btn-primary">Read More</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-8 col-lg-4">
+          <div class="card text-center" style="width: 18rem;">
+            <img src="https://images.unsplash.com/photo-1682017907144-c6b3287d81d9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwzNHx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h3 class="card-title">Special title treatment</h3>
+              <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+              <a href="#" class="btn btn-primary">Read More</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-8 col-lg-4">
+          <div class="card text-center" style="width: 18rem;">
+            <img src="https://images.unsplash.com/photo-1682048717093-b2b8bd59d294?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxNHx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h3 class="card-title">Special title treatment</h3>
+              <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+              <a href="#" class="btn btn-primary">Read More</a>
+            </div>
+          </div>
+        </div>     
+      </div>
+    </div>
+    
+    
+
+    <div class="container project-container col-xxl-8">
+      <div class="row justify-content-center">
+        <div class="col-sm-8 col-lg-4">
+          <div class="card text-center" style="width: 18rem;">
+            <img src="https://images.unsplash.com/photo-1681819670843-28ece64f1929?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw3fHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=500&q=60" 
+            class="card-img-top" alt="..." >
+            <div class="card-body">
+              <h3 class="card-title">Special title treatment</h3>
+              <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+              <a href="https://poom-blog.herokuapp.com/post/2" class="btn btn-primary">Read More</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-8 col-lg-4">
+          <div class="card text-center" style="width: 18rem;">
+            <img src="https://images.unsplash.com/photo-1682017907144-c6b3287d81d9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwzNHx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h3 class="card-title">Special title treatment</h3>
+              <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+              <a href="#" class="btn btn-primary">Read More</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-8 col-lg-4">
+          <div class="card text-center" style="width: 18rem;">
+            <img src="https://images.unsplash.com/photo-1682048717093-b2b8bd59d294?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxNHx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h3 class="card-title">Special title treatment</h3>
+              <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+              <a href="#" class="btn btn-primary">Read More</a>
+            </div>
+          </div>
+        </div>     
+      </div>
+    </div>
+    
+    <div class="text-center">
+      <a class="btn btn-outline-dark btn-lg" href="" role="button">See More</a>
+    </div>
+
+  </section>
+
+    <!-- Footer -->
+    <section id="footer" class="footer-container">
+      <div class="bg-image justify-content-center align-items-center"
+        style="background-color: #004aad; height: 400px;">
+        <div class="contact-description text-center">
+          <h2>Let's Talk</h2>
+          <p>Wanna get in touch or talk about a project?</p>
+          <p >Feel free to contact me via email at: <a href="mailto: poomrapee.s@outlook.co.th" class="contact-email";>poomrapee.s@outlook.co.th</a></i></p>
+        </div>
+        
+        <div class="container icon-container">
+          <div class="row">
+            <div class="col-lg-8 col-md-10 mx-auto">
+              <ul class="list-inline text-center">
+                <li class="list-inline-item">
+                  <a href="https://www.linkedin.com/in/poomrapee-sareekachoncharu-198b03253/">
+                    <span class="fa-stack fa-lg">
+                      <i class="fa-brands fa-linkedin-in fa-stack-1x"></i>
+                    </span>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="https://web.facebook.com/poomrapee.sereekachoncharu">
+                    <span class="fa-stack fa-lg">
+                      <i class="fa-brands fa-facebook-f fa-stack-1x"></i>
+                    </span>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="https://github.com/Mirai003">
+                    <span class="fa-stack fa-lg">
+                      <i class="fa-brands fa-github fa-stack-1x"></i>
+                    </span>
+                  </a>
+                </li>
+              </ul>
+              <p class="copyright text-center align-text-bottom" style="color: #ede5e5;">Handcrafted by &copy; Poomrapee Sareekachoncharu 2023</p>
+            </div>
+          </div>
+        </div>
+      </div>
+        
+
+  </section>
+    
+
+
+
+
+
+
+   <!-- bootstrap script -->
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+  </body>
+</html>
