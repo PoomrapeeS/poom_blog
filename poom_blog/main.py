@@ -99,17 +99,15 @@ class Comment(db.Model):
     text = db.Column(db.Text, nullable=False)
 
 
-# with app.app_context():
-    # db.create_all()
+
+with app.app_context():
+    db.create_all()
+
 
 @app.route('/')
-def home():
-    return render_template("index.html")
-
-@app.route('/portfolio')
 def get_all_posts():
     posts = BlogPost.query.all()
-    return render_template("portfolio.html", all_posts=posts, current_user=current_user)
+    return render_template("index.html", all_posts=posts, current_user=current_user)
 
 
 @app.route('/register', methods=["GET", "POST"])
